@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import *
+from .views import AddUserView, GetMoneyView
 
 urlpatterns = [    
-    path('add_user', AddUserView.as_view()),
+    path('adduser', AddUserView.as_view()),
+    path('getmoney', GetMoneyView.as_view()),
 ]
