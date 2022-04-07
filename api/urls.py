@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import AddUserView, GetMoneyView
+from .views import user_list, user_detail, transaction_list, transaction_detail
 
 urlpatterns = [    
-    path('adduser', AddUserView.as_view()),
-    path('getmoney', GetMoneyView.as_view()),
-]
+    path('user', user_list),
+    path('user_detail/<int:pk>', user_detail),
+    path('transaction', transaction_list),
+    path('transaction_detail/<int:pk>', transaction_detail),
+] 

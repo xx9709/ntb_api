@@ -18,7 +18,7 @@ class UserSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
 
-class GetMoneySerilizer(serializers.ModelSerializer):
+class TransactionSerializer(serializers.ModelSerializer):
     class Meta: 
         model = Transaction
         fields = '__all__' 
